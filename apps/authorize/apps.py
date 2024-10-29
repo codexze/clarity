@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class AuthenticationConfig(AppConfig):
-    name = 'apps.authentication'
-    label = 'authentication'
+class AuthorizeConfig(AppConfig):
+    name = 'apps.authorize'
+    label = 'authorize'

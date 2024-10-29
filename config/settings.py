@@ -42,11 +42,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
-    'app.authentication',
-    'app.core',
-    'app.clients',
-    'app.services',
-    'app.appointments',
+    'apps.authorize',
+    'apps.core',
+    'apps.clients',
+    'apps.services',
+    'apps.appointments',
 
 ]
 
@@ -87,6 +87,9 @@ ASGI_APPLICATION = "config.asgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {'default': env.db('DATABASE_URL')}
+
+# Default user model
+AUTH_USER_MODEL = 'authorize.User'
 
 
 # Password validation
